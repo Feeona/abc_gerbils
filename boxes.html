@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:700' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<div class="cube flip-to-top">
+		  <div class="default-state">
+			    <span>A</span>
+		  </div>
+		  <div class="active-state">
+	  		  <span>A</span>
+	  	</div>
+	</div>
+
+	<style>
+
+	@cube-width: 100px;
+	@cube-height: 100px;
+
+	/* CORE CSS */
+	body {
+	  .perspective(1000px);
+	}
+
+	/* Container box to set the sides relative to */
+	.cube {
+		  width: @cube-width;
+	  	height: @cube-height;
+		  .transition(all 250ms ease);
+		  .transform-style(preserve-3d);
+	}
+
+	/* The two faces of the cube */
+	.default-state, .active-state {
+	  	height: @cube-height;
+	}
+
+	/* Position the faces */
+	.default-state {
+		  .translateZ(@cube-height/2);
+	}
+
+	.flip-to-top .active-state {
+		  .transform(rotateX(90deg) translateZ(@cube-height*1.5));
+	}
+
+	.flip-to-bottom .active-state {
+		  .transform(rotateX(-90deg) translateZ(-50px));
+	}
+
+	/* Rotate the cube */
+	.cube.flip-to-top:hover {
+		  .rotateX(-50deg);
+	}
+
+	.cube.flip-to-bottom:hover {
+		  .rotateX(50deg);
+	}
+	/* END CORE CSS */
+
+
+	/* Demo styling */
+	body {
+	  font-family: 'Archivo Narrow', sans-serif;
+	  font-weight: 400;
+	  margin: 70px;
+	  background: #f1f1f1;
+	}
+
+	.cube {
+		  text-align: center;
+	  	margin: 0 auto;
+	}
+
+	.default-state, .active-state {
+	  background-image: url(fbd1c.jpg)
+	  
+	  font-size: 60px;
+	  text-transform: uppercase;
+	  color: #fff;
+	  line-height: @cube-height;
+	  .transition(background 250ms ease);
+	}
+
+	.cube:hover .default-state {
+	  background-image: darken url(fbd1c.jpg 90%);
+	}
+
+	.active-state {
+	  background-image: darken url(fbd1c.jpg 7%);
+	}
+
+	#flipto {
+	  display: block;
+	  text-align: center;
+	  text-decoration: none;
+	  margin-top: 20px;
+	  color: #ccc;
+	}
+
+	</style>
+</body>
+</html>
+
+
+
+

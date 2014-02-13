@@ -1,0 +1,750 @@
+*, *:before, *:after {
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,progress,video{display:inline-block;vertical-align:baseline;}audio:not([controls]){display:none;height:0;}[hidden],template{display:none;}a{background:transparent;}a:active,a:hover{outline:0;}abbr[title]{border-bottom:1px dotted;}dfn{font-style:italic;}h1{font-size:2em;margin:.67em 0;}mark{background:#ff0;color:#000;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:1em 40px;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em;}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0;}button{overflow:visible;}button,select{text-transform:none;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input{line-height:normal;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}table{border-collapse:collapse;border-spacing:0;}td,th{padding:0;}b,strong,optgroup{font-weight:700;}pre,textarea{overflow:auto;}button::-moz-focus-inner,input::-moz-focus-inner,legend{border:0;padding:0;}
+}
+
+.clearfix:after {
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+body {
+	background: #FFF url(images/notebook.png);
+	-webkit-perspective: 100000px;
+	-moz-perspective: 100000px;
+	perspective: 100000px;
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+p {
+	font-family: 'Georgia';
+	color: rgba(243,242,242, 0.8);
+	padding: 0px 20px;
+}
+
+h2 {
+	font-family: 'Love Ya Like A Sister', cursive;
+	color: rgba(243,242,242, 0.8);
+	text-align: center;
+	text-decoration: underline;
+}
+
+h3 {
+	font-family: 'Love Ya Like A Sister', cursive;
+	color: rgba(243,242,242, 0.8);
+	text-align: center;
+	text-decoration: underline;
+}
+
+ul {
+	font-family: 'Georgia';
+	color: rgba(243,242,242, 0.8);
+}
+
+ul li {
+	list-style: none;
+	font-family: 'Georgia';
+	color: rgba(243,242,242, 0.8);
+	padding-right: 10px;
+}
+
+div.wrapper {
+	border-radius: 10px;
+	background-size: 225px auto;
+	color: white;
+	padding: 40px 0px 40px 40px;
+	background: url(images/dark-wood-grain-texture.jpg);
+	display: block;
+	margin: 10px auto;
+	max-width: 1000px;
+	overflow: hidden;
+	webkit-box-shadow: 3px 0px 15px 0px rgba(50, 50, 50, 0.7);
+	-moz-box-shadow:    3px 0px 15px 0px rgba(50, 50, 50, 0.7);
+	box-shadow:         3px 0px 15px 0px rgba(50, 50, 50, 0.7);
+	position: relative;
+}
+
+div.header {
+	width: 462px;
+	overflow: hidden;	
+	padding: 20px;
+	margin: 0 auto;
+}
+
+div.content {
+	background: url(images/Optimized_BCB.jpg);
+	float: left;
+	padding-bottom: 40px;
+	border-radius: 10px;
+	width: 70%;
+	-webkit-box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 8);
+	-moz-box-shadow:    inset 0px 0px 20px 0px rgba(0, 0, 0, 8);
+	box-shadow:         inset 0px 0px 20px 0px rgba(0, 0, 0, 8);
+	z-index: 2;
+}
+
+p.showText {
+	width: 50%;
+	display: block;
+	float: right;
+	padding-left: 30px;
+	padding-right: 20px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-transform:rotate(10deg);
+	-moz-transform:rotate(10deg);
+	transform:rotate(10deg);
+
+}
+
+p.missionText {
+	width: 50%;
+	display: block;
+	float: left;
+	text-align: center;
+	padding-right: 30px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+	-webkit-transform:rotate(-10deg);
+	-moz-transform:rotate(-10deg);
+	transform:rotate(-10deg);
+
+}
+
+p.aboutText1 {
+	padding: 10px 50px 0px 50px;
+	font-size: 20px;
+	margin-top: 320px;
+}
+
+p.aboutText {
+	padding: 10px 50px 0px 50px;
+	font-size: 20px;
+	line-height: 1.6;
+}
+
+p.photoText {
+	color: #000;
+	padding: 0;
+	margin: 0;
+}
+
+/*SOCIAL STICKERS START*/
+
+.socialStick {
+	float: right;
+	width: 30%;
+	margin-top: -30px;
+}
+
+.socialStick img {
+	margin-right: 29px;
+}
+
+/*LINKS AND GENETICS COLOURS START*/
+
+.contentLinks {
+	color: #779ECB;
+}
+
+.abca {
+	color: #FF6961;
+}
+
+.abcb {
+	color: #779ECB;
+}
+
+.abcc {
+	color: #77DD77;
+}
+
+.abcd {
+	color: #FDFD96;
+}
+
+.abce {
+	color: #FFD1DC;
+}
+
+.abcf {
+	color: #FFB347;
+}
+
+.colorList {
+	line-height: 20px;
+}
+
+/*DL DD DT START*/
+
+dl {
+	float: left;
+	padding: 0px 20px;
+}
+
+dd {
+	margin-top: -15px;
+}
+
+dt {
+	line-height: 50px;
+	font-family: 'Georgia';
+	color: rgba(243,242,242, 0.8);
+}
+
+.rightDl {
+	float: right;
+}
+
+/*CARE LIST STYLE START*/
+
+.doDont {
+	padding: 0px 40px;
+}
+
+.doDont li {
+	list-style-type: none;
+	font-family: 'Georgia';
+	color: rgba(243,242,242, 0.8);
+	margin-bottom: 10px;
+}
+
+.doNotli {
+	color: #FF6961;
+}
+
+.doLi {
+	color: #77DD77;
+}
+
+/*CONTACT FORM STYLE STARTS*/
+
+#contactform {
+	margin: 0 auto;
+}
+
+.red {
+	color: #FF6961;
+}
+
+label {
+	font-family: 'Georgia';
+	color: rgba(243,242,242, 0.8);
+}
+
+input {
+	width: 300px;
+	border: none;
+	background: rgba(243,242,242, 0.3);
+	padding: 10px;
+	font-size: 20px;
+	margin: 5px;
+	font-family: 'Georgia';
+}
+
+input:focus {
+	border: 2px rgba(255,255,255, 0.4);
+}
+
+textarea {
+	width: 300px;
+	height: 200px;
+	background: rgba(243,242,242, 0.4);
+	margin: 5px;
+	border: none;
+}
+
+textarea:focus {
+	border: 2px rgba(255,255,255, 0.4);
+}
+
+td {
+	font-family: Georgia, serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
+input[type=submit] {
+	width: 165px;
+}
+
+/*NAVIGATION STARTS*/
+
+ul.nav {
+	margin-bottom: 70px;
+	margin-top: 0px;
+	float:left;
+	width:100%;
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+}
+ul.nav {
+	width: 100%;
+}
+
+ul.nav li {
+	display:inline;
+	position: relative;
+	float:left;
+	width: 25%; 
+}
+ul.nav li a {
+	padding:10px;
+	float:left;
+	text-decoration: none;
+	color: rgba(243,242,242, 0.8);
+	font-size: 40px;
+	text-align: left;
+	font-family: 'Love Ya Like A Sister', cursive;
+}
+
+ul.nav li ul {
+	color:white;
+	display:none;
+	position: absolute;
+	width:auto;
+	top:70px;
+	padding: 0;
+
+}
+
+ul.nav li:hover ul {
+	display:block;				
+}
+
+ul.nav li ul li {
+	display:list-item;
+	float:none;
+	width: 100%;
+	list-style-type: none;
+
+}
+
+ul.nav li ul li a {
+	padding:0px 10px;
+	display:block;
+	float:none;
+	font-size: 25px;
+	font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.sub-sub-nav a {
+	margin-left: -5px;
+}
+
+ul.nav #current {
+	text-decoration: underline;
+}
+
+
+.link1 a:hover {
+	color: #FF6961;
+}
+
+.link2 a:hover {
+	color: #779ECB;
+}
+
+.link3 a:hover {
+	color: #77DD77;
+}
+
+.link4 a:hover {
+	color: #FDFD96;
+}
+
+
+ul.nav li ul li ul {
+	left:100%;
+	top:0;
+	list-style:none;
+
+}
+
+ul li ul li ul.sub-sub-nav {
+	display:none;
+}
+
+ul.nav li ul li:hover ul {
+	display:block;
+}
+
+
+/*IMAGE SIDEBAR START*/
+
+.ex4 {
+	float: right;
+	width: 30%;
+}
+
+.ex4 img {
+	width: 250px;;
+	max-width: 100%;
+	margin: 30px 20px; 
+	border: 5px solid #eee; 
+	-webkit-box-shadow: 2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	-webkit-transition: all 0.5s ease-out; 
+	-moz-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease; 
+} 
+
+
+.ex4 img:hover { 
+	-webkit-transform: rotate(-7deg); 
+	-moz-transform: rotate(-7deg); 
+	-o-transform: rotate(-7deg);
+}
+
+.ex4 img:hover:last-child { 
+	-webkit-transform: rotate(7deg); 
+	-moz-transform: rotate(7deg); 
+	-o-transform: rotate(7deg);
+}
+
+
+/*HEADER BUILDING BLOCKS STARTS*/
+
+.cube {
+	width: 100px;
+	height: 100px;
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	transition: all 250ms ease;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+}
+/* The two faces of the cube */
+.default-state,
+.active-state {
+	height: 100px;
+}
+/* Position the faces */
+.default-state {
+	-webkit-transform: translateZ(50px);
+	-moz-transform: translateZ(50px);
+	-o-transform: translateZ(50px);
+	-ms-transform: translateZ(50px);
+	transform: translateZ(50px);
+
+}
+
+.flip-to-top .active-state {
+	-webkit-transform: rotateX(90deg) translateZ(150px);
+	-moz-transform: rotateX(90deg) translateZ(150px);
+	-o-transform: rotateX(90deg) translateZ(150px);
+	-ms-transform: rotateX(90deg) translateZ(150px);
+	transform: rotateX(90deg) translateZ(150px);
+	-webkit-box-shadow: 2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+}
+
+/* Rotate the cube */
+.cube.flip-to-top:hover {
+	-webkit-transform: rotateX(-89deg);
+	-moz-transform: rotateX(-89deg);
+	-o-transform: rotateX(-89deg);
+	-ms-transform: rotateX(-89deg);
+	transform: rotateX(-89deg);
+}
+
+/* END CORE CSS */
+/* Demo styling */
+.cube {
+	text-align: center;
+	display: inline-block;
+	float: left;
+	margin-right: 60px;
+
+
+}
+.default-state,
+.active-state {
+	background: url(images/fbd1c.jpg);
+	font-size: 70px;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 80px;
+	border: 10px solid rgba(255,0,0,0.7);
+	-moz-box-shadow: inset 0 0 12px #000;
+	-webkit-box-shadow: inset 0 0 12px #000;
+	box-shadow: inset 0 0 12px #000;
+	-webkit-transition: background 250ms ease;
+	-moz-transition: background 250ms ease;
+	-o-transition: background 250ms ease;
+	transition: background 250ms ease;
+	-webkit-box-shadow: 2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+
+}
+
+.letter {
+	color: rgba(255,0,0,0.8);
+	text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 0px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* CORE CSS */
+/* Container box to set the sides relative to */
+.cubetwo {
+	width: 100px;
+	height: 100px;
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	transition: all 250ms ease;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+/* The two faces of the cube */
+.default-statetwo,
+.active-statetwo {
+	height: 100px;
+}
+/* Position the faces */
+.default-statetwo {
+	-webkit-transform: translateZ(50px);
+	-moz-transform: translateZ(50px);
+	-o-transform: translateZ(50px);
+	-ms-transform: translateZ(50px);
+	transform: translateZ(50px);
+}
+.flip-to-toptwo .active-statetwo {
+	-webkit-transform: rotateX(90deg) translateZ(150px);
+	-moz-transform: rotateX(90deg) translateZ(150px);
+	-o-transform: rotateX(90deg) translateZ(150px);
+	-ms-transform: rotateX(90deg) translateZ(150px);
+	transform: rotateX(90deg) translateZ(150px);
+	-webkit-box-shadow: 2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+}
+/* Rotate the cube */
+.cubetwo.flip-to-toptwo:hover {
+	-webkit-transform: rotateX(-89deg);
+	-moz-transform: rotateX(-89deg);
+	-o-transform: rotateX(-89deg);
+	-ms-transform: rotateX(-89deg);
+	transform: rotateX(-89deg);
+}
+/* END CORE CSS */
+/* Demo styling */
+.cubetwo {
+	text-align: center;
+	display: inline-block;
+	float: left;
+	position: relative;
+	top: -20px;
+	margin-right: 50px;
+}
+.default-statetwo,
+.active-statetwo {
+	background-image: url(images/fbd1c.jpg);
+	font-size: 70px;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 80px;
+	border: 10px solid rgba(0,0,255,0.7);
+	-moz-box-shadow: inset 0 0 10px #000;
+	-webkit-box-shadow: inset 0 0 10px #000;
+	box-shadow: inset 0 0 10px #000;
+	-webkit-transition: background 250ms ease;
+	-moz-transition: background 250ms ease;
+	-o-transition: background 250ms ease;
+	transition: background 250ms ease;
+	-webkit-box-shadow: 2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+}
+
+.lettertwo {
+	color: rgba(0,0,255,0.8);
+	text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 0px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+/* CORE CSS */
+/* Container box to set the sides relative to */
+.cubethree {
+	width: 100px;
+	height: 100px;
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	transition: all 250ms ease;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+/* The two faces of the cube */
+.default-statethree,
+.active-statethree {
+	height: 100px;
+}
+/* Position the faces */
+.default-statethree {
+	-webkit-transform: translateZ(50px);
+	-moz-transform: translateZ(50px);
+	-o-transform: translateZ(50px);
+	-ms-transform: translateZ(50px);
+	transform: translateZ(50px);
+}
+.flip-to-topthree .active-statethree {
+	-webkit-transform: rotateX(90deg) translateZ(150px);
+	-moz-transform: rotateX(90deg) translateZ(150px);
+	-o-transform: rotateX(90deg) translateZ(150px);
+	-ms-transform: rotateX(90deg) translateZ(150px);
+	transform: rotateX(90deg) translateZ(150px);
+	-webkit-box-shadow: 2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+}
+
+/* Rotate the cube */
+.cubethree.flip-to-topthree:hover {
+	-webkit-transform: rotateX(-89deg);
+	-moz-transform: rotateX(-89deg);
+	-o-transform: rotateX(-89deg);
+	-ms-transform: rotateX(-89deg);
+	transform: rotateX(-89deg);
+}
+
+/* END CORE CSS */
+/* Demo styling */
+
+.cubethree {
+	text-align: center;
+	display: inline-block;
+	float: left;
+}
+.default-statethree,
+.active-statethree {
+	background-image: url(images/fbd1c.jpg);
+	font-size: 70px;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 80px;
+	border: 10px solid rgba(0,255,0,0.7);
+	-moz-box-shadow: inset 0 0 10px #000;
+	-webkit-box-shadow: inset 0 0 10px #000;
+	box-shadow: inset 0 0 10px #000;
+	-webkit-transition: background 250ms ease;
+	-moz-transition: background 250ms ease;
+	-o-transition: background 250ms ease;
+	transition: background 250ms ease;
+	-webkit-box-shadow: 2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+}
+
+.letterthree {
+	color: rgba(0,255,0,0.8);
+	text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 0px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* CORE CSS */
+
+/* Container box to set the sides relative to */
+.cubefour {
+	width: 50px;
+	height: 50px;
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	transition: all 250ms ease;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+/* The two faces of the cube */
+.default-statefour,
+.active-statefour {
+	height: 50px;
+}
+/* Position the faces */
+.default-statefour {
+	-webkit-transform: translateZ(25px);
+	-moz-transform: translateZ(25px);
+	-o-transform: translateZ(25px);
+	-ms-transform: translateZ(25px);
+	transform: translateZ(25px);
+}
+.flip-to-topfour .active-statefour {
+	-webkit-transform: rotateX(90deg) translateZ(75px);
+	-moz-transform: rotateX(90deg) translateZ(75px);
+	-o-transform: rotateX(90deg) translateZ(75px);
+	-ms-transform: rotateX(90deg) translateZ(75px);
+	transform: rotateX(90deg) translateZ(75px);
+	-webkit-box-shadow: 2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+}
+
+/* Rotate the cube */
+.cubefour.flip-to-topfour:hover {
+	-webkit-transform: rotateX(-89deg);
+	-moz-transform: rotateX(-89deg);
+	-o-transform: rotateX(-89deg);
+	-ms-transform: rotateX(-89deg);
+	transform: rotateX(-89deg);
+}
+
+/* END CORE CSS */
+/* Demo styling */
+
+.cubefour {
+	text-align: center;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.default-statefour,
+.active-statefour {
+	background-image: url(images/fbd1c.jpg);
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 45px;
+	border: 2px solid black;
+	-webkit-transition: background 250ms ease;
+	-moz-transition: background 250ms ease;
+	-o-transition: background 250ms ease;
+	transition: background 250ms ease;
+	-webkit-box-shadow: 2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         2px -1px 16px 0px rgba(50, 50, 50, 0.75);
+}
+.letterfour {
+	color: rgba(0, 0, 0, 0.9);
+}
+.cubefour {
+	float: left;
+}
+
+

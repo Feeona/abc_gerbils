@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="stylesheet.css">
+	<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:700|Love+Ya+Like+A+Sister|Amatic+SC:700' rel='stylesheet' type='text/css'>
+
+	<title>ABC Gerbils</title>
+
+	<script language="javascript">
+		<!--
+		var gallery = new Array();
+		gallery[0] = new Array("1gerbils.jpg","0607MalePups1.jpg","IMG_0563.JPG","IMG_1602.JPG","IMG_6146.JPG");
+		gallery[1] = new Array("IMG_0571.JPG","IMG_9542.JPG","IMG_9921.JPG","IMG_9931.JPG","IMG_99211.JPG");
+		gallery[2] = new Array("IMG_0573.JPG","1450120_563321943757359_733425917_n.jpg","1465361_554523574637196_1928676566_n.jpg","548332_453631568057342_1735247058_n.jpg","IMG_6516.JPG");
+
+
+		function pickImageFrom(whichGallery)
+		{
+			var idx = Math.floor(Math.random() * gallery[whichGallery].length);
+			document.write('<img src="images/' + gallery[whichGallery][idx] + '">');
+		}
+//-->
+</script>
+
+</head>
+<body>
+
+
+
+	<div class="header clearfix">
+
+
+	<a href="http://www.abcgerbils.com/"><div class="cube flip-to-top">
+			<div class="default-state">
+				<span class="letter">A</span>
+			</div>
+			<div class="active-state">
+				<span class="letter">A</span>
+			</div>
+		</div>
+		<div class="cubetwo flip-to-toptwo">
+			<div class="default-statetwo">
+				<span class="lettertwo">B</span>
+			</div>
+			<div class="active-statetwo">
+				<span class="lettertwo">B</span>
+			</div>
+		</div>
+		<div class="cubethree flip-to-topthree">
+			<div class="default-statethree">
+				<span class="letterthree">C</span>
+			</div>
+			<div class="active-statethree">
+				<span class="letterthree">C</span>
+			</div>
+		</div>
+		<div class="cubefour flip-to-topfour">
+			<div class="default-statefour">
+				<span class="letterfour">g</span>
+			</div>
+			<div class="active-statefour">
+				<span class="letterfour">g</span>
+			</div>
+		</div>
+		<div class="cubefour flip-to-topfour">
+			<div class="default-statefour">
+				<span class="letterfour">e</span>
+			</div>
+			<div class="active-statefour">
+				<span class="letterfour">e</span>
+			</div>
+		</div>
+		<div class="cubefour flip-to-topfour">
+			<div class="default-statefour">
+				<span class="letterfour">r</span>
+			</div>
+			<div class="active-statefour">
+				<span class="letterfour">r</span>
+			</div>
+		</div>
+		<div class="cubefour flip-to-topfour">
+			<div class="default-statefour">
+				<span class="letterfour">b</span>
+			</div>
+			<div class="active-statefour">
+				<span class="letterfour">b</span>
+			</div>
+		</div>
+		<div class="cubefour flip-to-topfour">
+			<div class="default-statefour">
+				<span class="letterfour">i</span>
+			</div>
+			<div class="active-statefour">
+				<span class="letterfour">i</span>
+			</div>
+		</div>
+		<div class="cubefour flip-to-topfour">
+			<div class="default-statefour">
+				<span class="letterfour">l</span>
+			</div>
+			<div class="active-statefour">
+				<span class="letterfour">l</span>
+			</div>
+		</div>
+		<div class="cubefour flip-to-topfour">
+			<div class="default-statefour">
+				<span class="letterfour">s</span>
+			</div>
+			<div class="active-statefour">
+				<span class="letterfour">s</span>
+			</div>
+		</div>
+
+	</div></a>
+
+	<div class="wrapper clearfix">
+
+		<div class="content">
+
+
+			<ul class="nav">
+				<li class="link1"><a href="index.html">Home</a></li>
+				<li class="link2"><a href="care.html">Care &#42780;</a>
+					<ul class="sub-menu">
+						<li><a href="breeding.html">Breeding</a></li>
+						<li><a href="genetics.html">Genetics &#8674;</a>
+							<ul class="sub-sub-nav">
+								<li><a href="colours.html">Colours</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="link3"><a href="adopt.html">Adopt</a>
+				</li>
+				<li class="link4"><a href="contact.html" id="current">Contact</a></li>
+			</ul>
+
+			<form name="contactform" method="post" action="php/send_form_email.php">
+
+				<table id="contactform">
+
+					<tr> 
+
+						<td colspan=2><h2>Email Form</h2></td> 
+
+					</tr>
+
+					<tr>
+
+						<td>
+
+							<label id="first_name">First Name <span class="red">*</span></label>
+
+						</td>
+
+						<td class="formtop">
+
+							<input type="text" name="first_name" required>
+
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td class="formtop">
+
+							<label id="last_name">Last Name <span class="red">*</span></label>
+
+						</td>
+
+						<td class="formtop">
+
+							<input  type="text" name="last_name" required>
+
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td class="formtop">
+
+							<label id="email">Email Address <span class="red">*</span></label>
+
+						</td>
+
+						<td class="formtop">
+
+							<input  type="text" name="email" required>
+
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td class="formtop">
+
+							<label id="telephone">Telephone Number</label>
+
+						</td>
+
+						<td class="formtop">
+
+							<input  type="text" name="telephone">
+
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td class="formtop">
+
+							<label id="comments">Comments <span class="red">*</span></label>
+
+						</td>
+
+						<td class="formtop">
+
+							<textarea  name="comments" required></textarea>
+
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<td colspan="2" style="text-align: center">
+
+							<input type="submit" value="Submit"> 
+
+						</td>
+
+					</tr>
+
+				</table>
+
+			</form>
+
+
+		</div>
+
+		<div class="socialStick">
+
+			<a href="http://www.facebook.com"><img src="images/facebook.png"></a>
+			<a href="http://www.twitter.com"><img src="images/twitter.png"></a>
+			<a href="http://www.flicker.com"><img src="images/flickr.png"></a>
+		</div>
+
+		<div class="ex4">
+
+
+			<script language="javascript">pickImageFrom(0);</script>
+			<script language="javascript">pickImageFrom(1);</script>
+			<script language="javascript">pickImageFrom(2);</script>
+
+
+
+		</div>
+	</div>	
+</body>
+</html>
